@@ -9,8 +9,9 @@
     "dist:win": "npm run dist -- WINDOWS",
     "dist:mac": "npm run dist -- MAC",
     "dist:linux": "npm run dist -- LINUX",
-    "cilinux": "node build.js WINDOWS && node build.js LINUX",
-    "cidarwin": "node build.js MAC"
+    "cilinux": "node build.js LINUX",
+    "cidarwin": "node build.js MAC",
+    "ciwindows": "node build.js WINDOWS"
   },
   "repository": {
     "type": "git",

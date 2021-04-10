@@ -37,8 +37,6 @@ script:
       -v ~/.cache/electron-builder:/root/.cache/electron-builder \
       electronuserland/builder:wine \
       /bin/bash -c "node -v && npm ci && npm run cilinux";
-    elif [ "$TRAVIS_OS_NAME" == "windows"]; then
-      npm ci && npm run ciwindows;
     else
       npm ci && npm run cidarwin;
     fi

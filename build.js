@@ -53,13 +53,14 @@ builder.build({
         },
         mac: {
             target: ['dmg', 'pkg'],
+            arch: ['x64', 'arm64'],
             category: 'public.app-category.social-networking'
         },
         dmg: {
-            artifactName: '${productName}-${version}.${ext}'
+            artifactName: '${productName}-${version}-${arch}.${ext}'
         },
         pkg: {
-            artifactName: '${productName}-${version}-setup.${ext}'
+            artifactName: '${productName}-${version}-setup-${arch}.${ext}'
         },
         linux: {
             target: ['AppImage', 'deb', 'rpm', 'snap'],

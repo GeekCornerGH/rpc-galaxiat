@@ -34,10 +34,6 @@ builder.build({
                 {
                     target: 'portable',
                     arch: ['x64', 'ia32']
-                },
-                {
-                    target: 'msi',
-                    arch: ['x64', 'ia32']
                 }
             ]
         },

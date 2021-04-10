@@ -1,36 +1,36 @@
 {
-  "name": "galaxiat-rpc",
-  "version": "1.0.0",
-  "description": "RPC for Galaxiat",
-  "main": "index.js",
-  "scripts": {
-    "start": "electron .",
-    "dist": "cross-env ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true node build.js",
-    "dist:win": "npm run dist -- WINDOWS",
-    "dist:mac": "npm run dist -- MAC",
-    "dist:linux": "npm run dist -- LINUX",
-    "cilinux": "node build.js LINUX",
-    "cidarwin": "node build.js MAC",
-    "ciwindows": "node build.js WINDOWS"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GeekCornerGH/rpc-galaxiat.git"
-  },
-  "author": "GeekCorner",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GeekCornerGH/rpc-galaxiat/issues"
-  },
-  "homepage": "https://github.com/GeekCornerGH/rpc-galaxiat#readme",
-  "devDependencies": {
-    "@electron/remote": "^1.1.0",
-    "cross-env": "^7.0.3",
-    "electron": "^12.0.2",
-    "electron-builder": "^22.10.5"
-  },
-  "dependencies": {
-    "discord-rpc": "^3.2.0",
-    "electron-localshortcut": "^3.2.1"
-  }
+    "name": "galaxiat-rpc",
+    "version": "1.0.0",
+    "description": "RPC for Galaxiat",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "dist": "cross-env ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true node build.js",
+        "dist:win": "npm run dist -- WINDOWS",
+        "dist:mac": "npm run dist -- MAC",
+        "dist:linux": "npm run dist -- LINUX",
+        "cilinux": "node build.js LINUX",
+        "cidarwin": "node build.js MAC",
+        "ciwindows": "node build.js WINDOWS"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GeekCornerGH/rpc-galaxiat.git"
+    },
+    "author": "GeekCorner",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GeekCornerGH/rpc-galaxiat/issues"
+    },
+    "homepage": "https://github.com/GeekCornerGH/rpc-galaxiat#readme",
+    "devDependencies": {
+        "@electron/remote": "^1.1.0",
+        "cross-env": "^7.0.3",
+        "electron": "^12.0.2",
+        "electron-builder": "^22.10.5"
+    },
+    "dependencies": {
+        "discord-rpc": "^3.2.0",
+        "electron-localshortcut": "^3.2.1"
+    }
 }

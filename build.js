@@ -52,8 +52,10 @@ builder.build({
             artifactName: '${productName}-${version}-protable.${ext}'
         },
         mac: {
-            target: ['dmg', 'pkg'],
-            arch: ['x64', 'arm64'],
+            target: {
+                target: ['dmg', 'pkg'],
+                arch: ['x64', 'arm64'],
+            },
             category: 'public.app-category.social-networking'
         },
         dmg: {
